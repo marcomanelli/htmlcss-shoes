@@ -1,0 +1,69 @@
+/* GLOBAL */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Rubik Mono One', sans-serif;
+  background-color: aqua;
+}
+
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* MAIN */
+
+nav{
+  position: fixed;
+  z-index: 5;
+  right: 30px;
+  top: 30px;
+}
+
+nav .blocco{
+  display: inline-block;
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 50px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+main section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.contenuto{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 25px;
+}
+
+section.scarpa1{
+  background-color: red;
+  color: yellow;
+}
+
+section.scarpa2{
+  background-color: green;
+  color: yellow;
+}
+
+section.scarpa3{
+  background-color: yellow;
+  color: green;
+}
