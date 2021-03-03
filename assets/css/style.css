@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Rubik Mono One', sans-serif;
   background-color: aqua;
@@ -26,7 +30,13 @@ nav{
   top: 30px;
 }
 
-nav .blocco{
+.blocco{
+  float: left;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
   display: inline-block;
   background-color: white;
   height: 50px;
@@ -34,8 +44,16 @@ nav .blocco{
   line-height: 50px;
   text-align: center;
   border-radius: 50%;
-  margin: 0 50px;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin: 0 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover{
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7)
+}
+
+nav a:active{
+  background-color: gray;
 }
 
 main section{
@@ -48,22 +66,27 @@ main section{
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 25px;
+  font-size: 2vw;
 }
 
-section.scarpa1{
+.contenuto img{
+  width: 100%;
+}
+
+#scarpa1{
   background-color: red;
   color: yellow;
 }
 
-section.scarpa2{
+#scarpa2{
   background-color: green;
   color: yellow;
 }
 
-section.scarpa3{
+#scarpa3{
   background-color: yellow;
   color: green;
 }
